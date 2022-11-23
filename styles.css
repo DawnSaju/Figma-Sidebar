@@ -1,0 +1,156 @@
+* {
+    transition: 0.5s;
+}
+
+body {
+    background-color: #15202B;
+}
+
+aside {
+    width: 250px;
+    height: 35rem;
+    transform: translateY(25px);
+    background-color: #0a0f15;
+    border-radius: 32px;
+}
+
+.logo {
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+}
+
+.logo img {
+    margin-top: 15px;
+    width: 28px;
+    height: 28px;
+}
+
+nav ul {
+    margin-left: -10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    color: #F7F9F9;
+    opacity: 0.8;
+}
+
+.Home {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    opacity: 1;
+}
+
+.H_icon,
+.E_icon,
+.N_icon,
+.Me_icon,
+.B_icon,
+.L_icon,
+.P_icon,
+.Mo_icon {
+    margin-bottom: -3px;
+    width: 20px;
+    height: 20px;
+}
+
+.Tw_icon {
+    width: 25px;
+    height: 25px;
+}
+
+.T_button {
+    margin-left: -20px;
+    margin-top: -10px;
+    cursor: pointer;
+    background-color: #1D9BF0;
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    border-radius: 100px;
+    border: none;
+    opacity: 1;
+    width: 210px;
+    height: 60px;
+}
+
+.T_button-mobile {
+    margin-left: -18px;
+    margin-top: -10px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background-color: #1D9BF0;
+    border-radius: 100px;
+    border: none;
+    color: #fff;
+    display: none;
+}
+
+.Tweet-mobile {
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.Tweet {
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    opacity: 1;
+}
+
+/* Light Mode */
+
+.light-mode body {
+    background-color: #FFFFFF;
+}
+
+.light-mode aside {
+    background-color: #FFFFFF;
+}
+
+.light-mode nav ul img {
+    filter: invert();
+}
+
+.light-mode nav ul {
+    color: #000;
+}
+
+/* Responsive */
+
+@media screen and (orientation: portrait) {
+    aside,
+    .light-mode aside {
+        transform: translateY(25px);
+        width: 92px;
+    }
+
+    nav ul,
+    .light-mode nav ul,
+    .Home,
+    .light-mode .Home
+     {
+        margin-bottom: -10px;
+        color: transparent;
+    }
+
+    .T_button,
+    .light-mode .T_button {
+        display: none;
+    }
+
+    .T_button-mobile,
+    .Tweet-mobile,
+    .light-mode .T_button-mobile,
+    .light-mode .Tweet-mobile {
+        display: block;
+    }
+}
